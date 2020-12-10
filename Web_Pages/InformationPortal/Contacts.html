@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Test</title>
+		<link rel="stylesheet" href="w3.css">
+	</head>
+
+	<body class="">
+		
+		<!-- START First CONTENT SECTION -->	
+
+			<section class="firstSection w3-blue">
+				<div class="w3-right w3-large">
+				<nav class="w3-bar">
+					<a href="Home.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-blue">Home</a>
+					<a href="About.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-blue">About</a>
+					<a href="Services.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-blue">Services</a>
+					<a href="Contacts.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-blue w3-border-bottom w3-border-white">Contacts</a>
+				</nav>
+				</div>
+				<br />	<br />	<br />
+				<div class="w3-jumbo w3-center w3-padding">Get In Touch !</div>
+			</section>
+			<div class="w3-right w3-clear w3-half">
+				<br />
+				<ul class="w3-ul w3-text-blue w3-large">
+					<li><b>E-mail:</b> ourcompany@mail.bg</li>
+					<li><b>Tel:</b> +359 877 44 55 66</li>
+					<li><b>Address:</b> zhk.Suhata reka, Sofia 1000, Bulgaria</li>
+					<li></li>
+				</ul>
+			</div>
+
+		<!-- END First CONTENT SECOND ROW -->
+
+		<!-- START SECOND SECTION -->	
+			<section class="w3-light-grey w3-text-gray">
+				
+				<div class="MainSection w3-padding w3-row-padding">
+					<h2>Contact Us</h2>
+					<div class="w3-card-4 w3-half">
+						<form class="w3-container w3-row">
+					<label>
+						<b class="w3-text-blue">Login:</b>
+					</label>
+						<input class="w3-section w3-input w3-border w3-light-grey" type="text">
+					<label>
+						<b class="w3-text-red">Password:</b>
+					</label>
+						<input class="w3-section w3-input w3-border w3-light-grey" type="password">
+					<div class="w3-half">
+						<h3>Check correctly</h3>
+						<p>
+							<input class="w3-check" type="checkbox" checked="checked">
+							<label>HTML</label>
+						</p>
+						<p>
+							<input class="w3-check" type="checkbox">
+							<label>W3.CSS</label>
+						</p>
+						<p>
+							<input class="w3-check" type="checkbox">
+							<label>Javascript</label>
+						</p>
+						<p>
+							<input class="w3-check" type="checkbox">
+							<label>Bootstrap</label>
+						</p>
+					</div>
+					<div class="w3-half">
+						<h3>Gender</h3>
+						<input class="w3-radio" type="radio" name="gender" value="male" checked>
+						<label>Male</label>
+						<input class="w3-radio" type="radio" name="gender" value="male">
+						<label>Female</label>
+					</div>
+					<button class="w3-section w3-btn w3-blue">Sing In</button>
+					</form>
+					</div>
+				
+					<div class="MapSection w3-half">
+						<div id="googleMap" style="width:100%; height:420px;"></div>
+						<script>
+							function myMap(){
+							var mapProp = {
+									center:new google.maps.LatLng(51.508742,-0.120850),
+									zoom:5,
+								};
+							var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+							}
+						</script>
+						<script src ="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+					</div>
+				
+				</div>				
+			</section>
+		<!-- END SECOND SECTION -->	
+			<br />
+		</body>
+
+</html>
